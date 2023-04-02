@@ -1,0 +1,128 @@
+body{
+    width: 100%;
+       height: 100vh;
+       background: linear-gradient(
+           to top,
+           lightskyblue 0%,
+           lightskyblue 90%,               
+           black 90%,
+           black 100%
+           );
+       } 
+       
+   #container {
+       max-width: 1170px;
+       margin:0 auto;
+       height: 100vh;
+       background: lightskyblue;
+       display: grid;
+       grid-template-rows: 100px 200px 300px 198px;
+       grid-template-columns: 0.5fr 1fr;
+               }
+
+   header {
+       grid-column: 1 / 3;
+       grid-row: 1 / 1;
+       background: grey;
+       color: black;
+       font-weight: bold;
+
+       display: flex;
+       flex-direction: row;
+       padding: 10px;
+       }
+
+   feature {
+       grid-column: 1 / 3;
+       grid-row: 2 / 2;
+       background: lightskyblue;
+       color: white;
+       
+       display: flex;
+       flex-direction: row;
+       justify-content:left;
+       margin-right: 5px;
+       }    
+
+   aside {
+       grid-column: 1 / 3;
+       grid-row: 3 / 3;
+       background: white;
+       color: black;
+                             
+       }
+
+   main {
+       grid-row: 3 / 3;
+       grid-column: 2 / 3;
+       background: white;
+       color: black;
+       }
+
+   footer {
+       grid-column: 1 / 3;
+       grid-row: 4 / 4;
+       background: black;
+       color: white;
+       font-weight: bold;
+       text-align: center;
+       }
+
+   .h1 {
+       font-weight: bold;
+       text-align: center;
+   }
+
+   .logo{
+
+       font-size: 45;
+       font-weight: bold;
+       text-align: left;
+   }
+
+   .ul {
+       list-style-type: none;
+       margin: 10px;
+       padding: 10px;
+   }
+
+   .vtext {
+       display: flex;
+       flex-direction: row;
+       text-decoration: underline;
+       text-decoration-color: blue;
+       color: blue;
+       margin: 10px;
+   }
+
+   .ftr{
+       display: flex;
+       flex-direction: row;
+       width: 750px;
+       margin: 10px;
+       text-align: center;
+   }
+
+   .navul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+       overflow: hidden;
+       
+   }
+
+   .navli {
+       float: left;
+   }
+
+   .navli a {
+       display: block;
+       color: black;
+       text-align: right;
+       padding: 14px 16px;
+       text-decoration: none;
+   }
+
+   .navli a:hover {
+       background-color: lightskyblue;
+   }
